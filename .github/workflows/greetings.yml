@@ -9,6 +9,9 @@ jobs:
       issues: write
       pull-requests: write
     steps:
+    - run: |
+        date
+        echo "hello world"
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
